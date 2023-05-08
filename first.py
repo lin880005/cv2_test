@@ -1,3 +1,4 @@
+
 import cv2
 
 
@@ -13,7 +14,7 @@ elif num ==2:
 else:
     print("請再輸入一次")
 '''
-img = [cv2.imread("cv.jpg"),cv2.imread("dog.jpg"),cv2.imread("dog1.jpg"),cv2.imread("dog2.jpg"),cv2.imread("dog3.jpg")]
+img = [cv2.imread("hi/cv.jpg"),cv2.imread("hi/dog.jpg"),cv2.imread("hi/dog1.jpg"),cv2.imread("hi/dog2.jpg"),cv2.imread("C:\\Users\\Patrick\\Desktop\\python0508\\hi\\hi2\\dog3.jpg")]
 i=0
 while i < len(img):
     
