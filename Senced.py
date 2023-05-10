@@ -43,6 +43,7 @@ def show_word():
     corlor = (99,79,4)
     lineWidth = 1
     cv2.putText(img,"hello",position,cv2.FONT_HERSHEY_DUPLEX,size,corlor,lineWidth)
+    cv2.imwrite("reslut.jpg",img)
     cv2.imshow("win",img)
     cv2.waitKey(0)
 
