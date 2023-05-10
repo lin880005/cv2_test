@@ -16,7 +16,7 @@ cv2.waitKey(0)
 """
 
 def show_circle(center,color,):
-    circle1 = cv2.imread("1-0.jpg")
+    circle1 = cv2.imread("hihi/1-0.jpg")
     circle2 = circle1.copy()
     radius = 10
     thickness = 2
@@ -26,11 +26,23 @@ def show_circle(center,color,):
     cv2.imshow("win2",circle2)
     cv2.waitKey(0)
 
+def show_rectangle():
+    img = cv2.imread("hihi/1-0.jpg")
+    point1 = (180,160)
+    point2 = (20,50)
+    thickness = 2
+    color = (200,55,55)
+    
+    img = cv2.rectangle(img,point1,point2,color,thickness)
+    cv2.imshow("win",img)
+    cv2.waitKey(0)
+"""
 center = (200,150)
 color = (70,10,10)
 show_circle(center,color)
 show_circle((300,300),(99,6,7))
-
+"""
+show_rectangle()
 
 
 
