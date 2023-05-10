@@ -36,13 +36,24 @@ def show_rectangle():
     img = cv2.rectangle(img,point1,point2,color,thickness)
     cv2.imshow("win",img)
     cv2.waitKey(0)
+def show_word():
+    img = cv2.imread("cv.jpg")
+    position = (10,40)
+    size = 2
+    corlor = (99,79,4)
+    lineWidth = 1
+    cv2.putText(img,"hello",position,cv2.FONT_HERSHEY_DUPLEX,size,corlor,lineWidth)
+    cv2.imshow("win",img)
+    cv2.waitKey(0)
+
+show_word()
 """
 center = (200,150)
 color = (70,10,10)
 show_circle(center,color)
 show_circle((300,300),(99,6,7))
 """
-show_rectangle()
+#show_rectangle()
 
 
 
