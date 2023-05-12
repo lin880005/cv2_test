@@ -1,7 +1,6 @@
 import cv2
 import random
-a = [[200,200,280,240,"cat"],[200,240,280,285,"dog"]]
-img = cv2.imread("cv.jpg")
+
 def draw_rectangle(i,img):
     color_random = random.randint(0,255)
     point1 = (i[0],i[1])
@@ -30,5 +29,6 @@ def show_result(img,a,isSave):
     cv2.imshow("win",img)
     cv2.waitKey(0)
         
-
-show_result(img,a, True)
+a = [[200,200,280,240,"cat"],[200,240,280,285,"dog"]]
+img = cv2.imread("cv.jpg")
+show_result(img,a,True)
