@@ -1,5 +1,6 @@
 import cv2
 
+
 def changePicColor(num,img):
     if num == 1: #變黑白照
         img = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) 
