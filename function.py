@@ -17,7 +17,7 @@ def error():
 def way_1():
     num = eval(input("請輸入數字:"))
     selectionList = []
-    for i in range(10):
+    for i in range(6):
         selectionList.append(error)
     
     selectionList[1] = print_1
@@ -25,8 +25,8 @@ def way_1():
     selectionList[5] = show_hello
 
     selectionList[num]()
-
-try:
-    way_1()
-except Exception:
-    print("error")
+if __name__ == "__main__":
+    try:
+        way_1()
+    except:
+        print("error")

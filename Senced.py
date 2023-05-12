@@ -47,13 +47,13 @@ def show_word():
     cv2.imshow("win",img)
     cv2.waitKey(0)
 
-show_word()
-"""
+
+
 center = (200,150)
 color = (70,10,10)
 show_circle(center,color)
 show_circle((300,300),(99,6,7))
-"""
+
 #show_rectangle()
 
 
