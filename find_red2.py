@@ -30,7 +30,6 @@ for cnt in contours:
     cv2.rectangle(img,(x,y),(x+w, y+h),(255,0,0),2)
     catch = int(x+w/2),int(y+h/2)
     cv2.circle(img,catch,2,(255,100,0),-1)
-    print(cv2.rectangle(img,(x,y),(x+w, y+h),(255,0,0),2))
     count +=1
 cv2.imshow('result', img)
 cv2.waitKey(0)
